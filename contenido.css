@@ -129,6 +129,11 @@
 }
 
 @media only screen and (max-width: 767px){
+
+    .container {
+        padding: 104px 20px 104px 20px;
+    }
+    
     .tour{
         flex-direction: column;
         height: 650px;
