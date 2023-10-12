@@ -144,6 +144,10 @@
         border-radius: 50px 50px 0 0;
     }
 
+    .text-tour > p {
+        font-size: 20px;
+    }
+
     .tour-img{
         height: 50%;
     }
