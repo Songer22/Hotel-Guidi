@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="header.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="contenido.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-title-container">
+                <img class="logo-Hotel-Guidi" src="img/logo-HG.png" alt="" >
+                <h2 class="titulo-navbar">HOTEL GUIDI</h2>
+            </div>
+            <ul class="links-navbar">
+                <li class="container-link"><a class="link" href="index.html">INICIO</a></li>
+                <li class="container-link"><a class="link" href="habitaciones.html">HABITACIONES</a></li>
+                <li class="container-link"><a class="link" href="gastronomia.html">GASTRONOMIA</a></li>
+                <li class="container-link"><a class="link" href="tours.html">TOURS</a></li>
+                <li class="container-link"><a class="link" href="contacto.html">CONTACTANOS</a></li>
+            </ul>
+            <div class="toggle_btn" id="btn-dropdown">
+                <i class="fa fa-sharp fa-light fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </div> -->
+
+        <div id="menu_mobile" class="menu_mobile" style="display: none;">
+            <div id="cerrar-dropdown" class="cerrar-dropdown"></div>
+            <div class="dropdown_menu">
+                <div class="container-link-dropdown">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-home-page">
+        <img src="img/Fondo-tours.webp" alt="">
+        <div class="container-text">
+            <h1 class="title-home">HOTEL GUIDI LINARES</h1>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="tour">
+                <div class="tour-info">
+                    <div class="logo-title">
+                        <img src="img/logo_baños_san_ignacio.png" alt="">
+                        <h1>Baños San Ignacio</h1>
+                    </div>
+                    <div class="text-tour">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus impedit dolore..</p>
+                    </div>
+                    <div class="link-tour">
+                        <a href="https://banosanignacioac.com/ac/">
+                            <button class="btn-link">Visitar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="tour-img"><img class="full-picture" src="img/baños.png" alt=""></div>
+            </div>
+
+            <div class="tour invertir">
+                <div class="tour-info">
+                    <div class="logo-title">
+                        <img src="img/logo_baños_san_ignacio.png" alt="">
+                        <h1>Baños San Ignacio</h1>
+                    </div>
+                    <div class="text-tour">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus impedit dolore..</p>
+                    </div>
+                    <div class="link-tour">
+                        <a href="https://banosanignacioac.com/ac/">
+                            <button class="btn-link">Visitar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="tour-img"><img class="full-picture" src="img/baños.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+    <script>
+
+    $("#btn-dropdown").click(function () {
+        $('#menu_mobile').show();
+    })
+
+
+    $("#cerrar-dropdown").click(function () {
+        $('#menu_mobile').hide();
+    })
+    </script>
+</body>
+</html>

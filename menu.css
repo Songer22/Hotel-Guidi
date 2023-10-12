@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Book Antiqua';
+}
+
+.title-home{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+header{
+    padding: 0 3rem;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+
+    box-shadow: 0 0px 20px 0px #d0d0d0;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title-container{
+    width: 250px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-Hotel-Guidi{
+    width:60px;
+}
+
+.links-navbar{
+    display: flex;
+    gap: 2rem;
+}
+
+.container-link{
+    list-style: none;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: #414141;
+    font-size: 1rem;
+    font-weight:bolder;
+}
+
+.titulo-navbar{
+    color: #414141;
+    font-size: 1.2rem;
+}
+
+.container-link:hover{
+    background: rgb(255, 250, 209);
+}
+
+.toggle_btn{
+    display: none;
+}
+
+.menu_mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .titulo-navbar{
+        display: none;
+    }
+
+    .logo-title-container{
+        width: 60px;
+    }
+
+    .navbar{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .links-navbar{
+        gap: 0;
+    }
+    
+    .link{
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    header{
+        padding: 0 1rem;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+    .links-navbar{
+        display: none;
+    }
+
+    .toggle_btn{
+        display: block;
+    }
+
+    .toggle_btn i{
+        font-size: 40px;
+        color: #414141;;
+    }
+
+    .menu_mobile {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        display: flex;
+    }
+
+    .dropdown_menu{
+        width: 70vw;
+        height: 100vh;
+        background: #ffff;
+
+        display: grid;
+        place-items: center;
+    }
+
+    .cerrar-dropdown{
+        width: 30vw;
+        height: 200vh;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+
+    .container-link-dropdown{
+        height: 50vh;
+        width: 80vw;
+    }
+
+}

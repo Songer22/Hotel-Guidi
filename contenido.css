@@ -1,0 +1,154 @@
+/* Section Home */
+.section-home-page {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.section-home-page img {
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+    object-fit: cover;
+}
+
+.container-text {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.section-home-page::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .3;
+}
+
+/* Contenedor */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 104px 40px 104px 40px;
+}
+
+/* Tours */
+
+.tour{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.invertir{
+    flex-direction: row-reverse;
+}
+
+.tour-img{
+    width: 100%;
+    height: 100%;
+}
+
+.full-picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.invertir > .tour-img > .full-picture{
+    border-radius: 50px 0px 0px 0px;
+}
+
+.tour-info{
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 250, 209);
+}
+
+.logo-title{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.logo-title > img{
+    height: 80px;
+}
+
+.logo-title > h1{
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+.text-tour {
+    display: grid;
+    place-items: center;
+    height: 60%;
+    padding: 0px 20px;
+}
+
+.text-tour > p{
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+}
+
+.link-tour{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.btn-link{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(107, 103, 103);
+    border-radius: 10px;
+    border-style: none;
+}
+
+.btn-link:hover{
+    background-color: #343232;
+}
+
+@media only screen and (max-width: 767px){
+    .tour{
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .tour-info{
+        height: 50%;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .tour-img{
+        height: 50%;
+    }
+
+    .full-picture{
+        border-radius: 0;
+    }
+
+    .invertir > .tour-img > .full-picture{
+        border-radius: 0;
+    }
+}
+
