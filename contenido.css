@@ -175,7 +175,8 @@ body{
 
     .invertir > .tour-img > .full-picture{
         border-radius: 0;
-        border-radius: 0 0 50px 50px;
+/*         border-radius: 0 0 50px 50px; */
+        border-radius: 50px;
     }
 
     .link-tour{
