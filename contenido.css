@@ -80,7 +80,7 @@ body{
     height: 100%;
     /* background: rgb(255, 250, 209); */
     /* background: rgb(212 212 212); */
-    background: #ffff;
+    /* background: #ffff; */
     border-radius: 50px;
 }
 
@@ -103,6 +103,7 @@ body{
     font-size: 30px;
     padding: 15px;
     text-align: center;
+    color: #C3A652;;
 }
 
 .text-tour {
@@ -115,6 +116,7 @@ body{
 .text-tour > p{
     font-size: 25px;
     width: 90%;
+    color: #585858;
 }
 
 .link-tour{
